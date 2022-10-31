@@ -1,0 +1,46 @@
+#task1 - 30
+
+def check(list):
+     return all(i == list[0] for i in list)
+
+print(check(["@", "@", "@", "@"]))
+print(check(["abc", "abc", "abc", "abc"]))
+print(check(["SS", "SS", "SS", "SS"]))
+print(check(["&&", "&", "&&&", "&&&&"]))
+print(check(["SS", "SS", "SS", "Ss"]))
+
+___________________________________________________
+
+#task2 - 30
+
+def typeValues(array):
+    array2 = []
+    for i in array:
+        j = type(i).__name__
+        array2.append(j)
+    return array2
+array =[1, 2, "null"]
+s = typeValues(array)
+print(s)
+
+___________________________________________________
+
+#task3 - 30
+___________________________________________________
+
+#task4 - 40
+
+def sort_by_length(list):
+    list.sort(key=len)
+    return list
+list = ["Google", "Apple", "Microsoft"]
+#list = ["Leonardo", "Michelangelo", "Raphael", "Donatello"]
+#list = ["Turing", "Einstein", "Jung"]
+print(sort_by_length(list))
+___________________________________________________
+
+#TASK1 - 50
+#TASK2 - 50
+
+
+
